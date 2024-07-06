@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="day">
+    <header class="header">
+        <a href="#" class="logo">Crawler</a>
+        <nav class="navbar">
+            <a href="#">Search</a>
+            <a href="#">Features</a>
+            <a href="#">News</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+    <section>
+        <!-- <img src="images/stars.svg" class="star nigt"> -->
+         <img src="images/sun.png" alt="" class="sun">
+         <img src="images/mountains.svg" alt="" class="mountain">
+         <h2 id="text">HELLO WORLD!!</h2>
+         <a href="#sec" id="btn">Explore</a>
+         <img src="images/trees.svg" class="tree">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Yeahhhhh!!!</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates dolore delectus sit officiis, deserunt nihil earum commodi. Odio odit fuga, nisi molestiae rerum eaque soluta accusantium, quo provident repellat a.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates dolore delectus sit officiis, deserunt nihil earum commodi. Odio odit fuga, nisi molestiae rerum eaque soluta accusantium, quo provident repellat a.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates dolore delectus sit officiis, deserunt nihil earum commodi. Odio odit fuga, nisi molestiae rerum eaque soluta accusantium, quo provident repellat a.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates dolore delectus sit officiis, deserunt nihil earum commodi. Odio odit fuga, nisi molestiae rerum eaque soluta accusantium, quo provident repellat a.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates dolore delectus sit officiis, deserunt nihil earum commodi. Odio odit fuga, nisi molestiae rerum eaque soluta accusantium, quo provident repellat a. <br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates dolore delectus sit officiis, deserunt nihil earum commodi. Odio odit fuga, nisi molestiae rerum eaque soluta accusantium, quo provident repellat a.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates dolore delectus sit officiis, deserunt nihil earum commodi. Odio odit fuga, nisi molestiae rerum eaque soluta accusantium, quo provident repellat a. <br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates dolore delectus sit officiis, deserunt nihil earum commodi. Odio odit fuga, nisi molestiae rerum eaque soluta accusantium, quo provident repellat a.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates dolore delectus sit officiis, deserunt nihil earum commodi. Odio odit fuga, nisi molestiae rerum eaque soluta accusantium, quo provident repellat a.</p>
+
+    </div>
+    <script>
+        let stars = document.querySelector('.stars')
+        let sun = document.querySelector('.sun');
+        let mountains = document.querySelector('.mountain');
+        let text = document.querySelector('#text');
+        let btn = document.querySelector('#btn');
+        let tree = document.querySelector('.tree');
+
+        window.addEventListener('scroll',()=>{
+            let value = scrollY;
+            console.log(value)
+            if(value < 50 ){
+            tree.style.top = value * (1.5) + 'px';
+            mountains.style.top = value * (-0.5) + 'px'; }
+            text.style.marginBottom = value * 10 + 'px'; 
+
+        });
+    </script>
+</body>
+</html>
